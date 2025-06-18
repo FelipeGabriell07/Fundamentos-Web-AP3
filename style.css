@@ -1,0 +1,112 @@
+
+header {
+  background-color: #002244;
+  color: white;
+}
+
+header h1 {
+  padding: 15px;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0074D9;
+}
+
+section.categoria {
+  margin-top: 40px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section.categoria h2 {
+  color: #003366;
+  font-size: 28px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+article.noticia {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+article.noticia h3 {
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+article.noticia:hover {
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  section.categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  section.categoria h2 {
+    grid-column: span 2;
+  }
+}
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #444;
+}
+section#futebol {
+  background-color: #f9f9f9;
+}
+
+section#tenis {
+  background-color: #fcf3cf;
+}
+
+section#tenismesa {
+  background-color: #ebf5fb;
+}
+
+section#f1 {
+  background-color: #fbeeeb;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:active {
+  background-color: #111;
+}
+
+section:target {
+  outline: 2px solid #0074D9;
+  box-shadow: 0 0 10px #0074D9;
+}
